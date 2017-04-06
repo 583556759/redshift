@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			class person{
+				constructor(name,age){
+					this.name=name;
+					this.age=age;
+				}
+				showname(){
+					return this.name
+				}
+				showage(){
+					return this.age
+				}
+			}
+			class worker extends person{
+				constructor(name,age,job){
+					super(name,age);
+					this.job=job;
+				}
+				showjob(){
+					return this.job
+				}
+			}
+			var p2=new worker('moon',20,'java');
+			alert(p2.showname());
+			alert(p2.showjob());
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
